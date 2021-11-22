@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
     <link rel="stylesheet" href="newstyle.css">
 </head>
@@ -26,45 +29,71 @@
         </div>
         <div class="content">
             <div class="locationAndTemperature">
-                <div class="location">Lucknow</div>
-                <div class="temperature">
-                    <h1>15° C </h1>
+                <div class="date-container">
+                    <div>
+                        <div class="time" id="time">
+                            12:30 <span id="am-pm">PM</span>
+                        </div>
+                        <div class="date" id="date">
+                            Monday, 25 May
+                        </div>
                 </div>
-                <div class="description">Sunny</div>
-                <div class="day7">Sunday</div>
+    
+                    <div class="others" id="current-weather-items">
+                        
+                    </div>
+                </div>
+    
+                <div class="place-container">
+                    <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                <div id="country" class="country">IN</div>
+                </div>
             </div>
-            <div class="windHumidityPressure">
+            <div class="windHumidityPressure" id="wind">
                 <div class="wind">Wind:<span></span> 5 Km/h </span> </div>
-                <div class="humidity"> humidity:<span>39% </span> </div>
-                <div class="pressure">pressure: <span>1012 mb</span></div>
+                <div class="humidity"> <span>39% </span> </div>
+                <div class="pressure">humidity: <span>1012 mb</span></div>
             </div>
         </div>
         <div class="prediction">
             <div class="day1 day">
-                <h4>Monday</h4>
-                <h3>16° C </h3>
+                
             </div>
             <div class="day2 day">
-                <h4>Tuesday</h4>
-                <h3>16° C </h3>
-            </div>
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+            </div> 
             <div class="day3 day">
-                <h4>Wednesday</h4>
-                <h3>16° C </h3>
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
             </div>
             <div class="day4 day">
-                <h4>Thursday</h4>
-                <h3>16° C </h3>
+                <div class="day">Thur</div>
+               <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
             </div>
             <div class="day5 day">
-                <h4>Friday</h4>
-                <h3>16° C </h3>
+                <div class="day">Fri</div>
+             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+               <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
             </div>
             <div class="day6 day">
-                <h4>Saturday</h4>
-                <h3>16° C </h3>
+             <div class="day">Sat</div>
+             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+             <div class="temp">Night - 25.6&#176; C</div>
+             <div class="temp">Day - 35.6&#176; C</div>
             </div>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="script.js"></script>
+
     </div>
 </body>
 
